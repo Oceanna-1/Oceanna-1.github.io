@@ -1,0 +1,68 @@
+/** Author: Oceanna Hartog; Student Number: 000940535
+Created on July 30th, 2024 **/
+
+header{
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 5px solid rgb(109, 176, 199);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%; 
+}
+.container{
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "menu"
+    "game"
+    "score";
+    row-gap: 10px; 
+}
+
+.menu{
+    grid-area: menu; 
+}
+.game{grid-area: game;}
+    
+.score{
+    grid-area: score;
+}
+
+
+footer{
+    text-align: center;
+    background-color: lightblue;
+    border-top: 5px solid rgb(109, 176, 199);
+    padding: 25px;
+}
+.jonk {
+    stroke: black;
+    stroke-width: 1;
+    /* fill: red; */
+    animation-name: spinPosition;
+    animation-duration: 1.5s;
+}
+
+#ball {
+    animation-name: ballBounce;
+    animation-duration: 5s;
+    transition-timing-function: ease;
+}
+.row {
+    margin: 10px;
+}
+
+@keyframes spinPosition {
+    from{
+        transform: translateY(-600px)
+    }
+    to{
+        transform: translateY(0)
+    }
+}
+
+@keyframes ballBounce {
+    0% {transform: translateY(0);}
+    50%{transform: translateY(500px);}
+    100%{transform: translateY(0);}
+}

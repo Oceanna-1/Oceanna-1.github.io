@@ -1,0 +1,10 @@
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: pink;
+}
+nav{
+    background-color: rgb(254, 241, 255);
+    border-bottom: 2px solid grey;
+}

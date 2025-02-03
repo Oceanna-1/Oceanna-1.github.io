@@ -1,0 +1,39 @@
+*{
+    margin: 10px;
+}
+
+body {
+    background-color: rgb(157, 157, 224);
+    padding: 10px;
+}
+header{
+    text-align: center;
+    border-bottom: 1px solid purple;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid purple;
+}
+.col{
+    text-align: center;
+}
+
+#timebox{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#image1, #image2, #image3 {
+    height: 150px;
+    width: 150px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+
+
+

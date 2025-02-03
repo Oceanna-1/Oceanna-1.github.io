@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(255, 227, 232);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.col {
+    padding: 5px;
+    border: 1px solid lightgrey;
+}
+#col1, #col2 {
+    background-color: white;;
+}
+footer{
+    background-color: white;
+    border: 5px solid rgb(255, 227, 232);
+    text-align: center;
+}
+.pet {
+    padding: 5px;
+}
