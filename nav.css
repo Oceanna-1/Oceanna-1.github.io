@@ -1,5 +1,10 @@
-nav {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(189, 218, 195);
-    border-bottom: 2px solid rgb(98, 148, 102);
+nav{
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+    border-bottom: 2px solid rgb(175, 63, 175);
+}
+
+
+footer{
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+    border-top: 2px solid rgb(175, 63, 175);
 }
