@@ -38,7 +38,6 @@
                     <li><a class="dropdown-item" href="../Assignment2/index.html" >Taking User Input</a></li>
                     <li><a class="dropdown-item" href="../Assignment3/index.html" >Time Events</a></li>
                     <li><a class="dropdown-item" href="" >JS Game</a></li>
-                    <li><a class="dropdown-item" href="../../activities/worksheet24/index.html" >Click Events</a></li>
                   </ul>
               </li>
         </div>
@@ -46,73 +45,77 @@
     </nav>
 
     <div class="divider mx-auto">
-        <h2 class="py-auto px-3">User Input - Perform Some Calculations!</h2>
+        <h2 class="py-auto px-3">JS Element Creation - Let's Play a Game!</h2>
     </div>
   </header>
-  <div class="container font">
+  
+  <main class="font">
+  <div class="container ">
     <div class="menu">
-      <header>
-        <h1>Pick Up Jonks</h1>
-    </header>
-    <main>
-      <div class="col"> <!-- Start of accordion helper menu-->
-        <div id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  How to Play!
-                </button>
-              </h5>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
+      <div class="accordion m-3 font" id="accordionMenu">
+
+        <div class="accordion-item"> <!--How to play accordion item-->
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How to Play!
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMenu">
+            <div class="accordion-body">
+              
+              <div class="function">
                 <p>To begin, press the space bar on your keyboard. This will cause the ball to drop. You have until the ball reaches the top of the screen again to pick up all the jonks.</p>
-                <p>Press the space bar to begin each new round. Left click on a jonk to make it disapear. Each round more jonks will be added. See how many rounds you can last!</p>
-                <p>If you miss a jonk before the ball reaches the top, the game is over!</p>
+                  <p>Press the space bar to begin each new round. Left click on a jonk to make it disapear. Each round more jonks will be added. See how many rounds you can last!</p>
               </div>
+
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Hint!
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
+        </div> <!--How to play accordion item ends-->
+        <div class="accordion-item"> <!--Hint accordion item-->
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Hint!
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMenu">
+            <div class="accordion-body">
+              <div class="function">
                 <p>Too hard for you? Press the easy mode button at the bottom to increase the size of the jonks.</p>
-                <p>Want to jazz things up? Double click the background to change the color!</p>
+                  <p>Want to jazz things up? Double click the background to change the color!</p>
               </div>
             </div>
           </div>
+        </div> <!--How to play accordion item ends-->
+      </div> <!-- accordion ends-->
+    </div>
+    
+    <div class="score">
+      <div class="row justify-content-between">
+        <div class="col-sm-6 w-25 text-center"><h4 class="customAlert" id="scoreMessage">Score: 0</h4></div>
+        <div class="col-sm-6 w-25"> 
+          <div id="easyMessage text-center"></div>
+          <button type="button" class="btn btn-dark text-white" id="easyMode"> Easy Mode </button>
         </div>
-      </div> 
+      </div>
     </div>
 
-      <div class="game">
-      <div class="col-8"> <!-- div containing SVG-->
-            <svg width="600" height ="600" id="svg1" viewBox="0 0 600 600" preserveAspectRatio="none">
-                <rect x="0" y="0" width="600" height="600" fill="skyblue" id="background"/>
-                <circle cx="550" cy="40" r="30" fill="red"/>
-            </svg>
-      </div> <!-- end of div containing SVG -->
-      </div>
-      
-      <div class="score">
-      <div class="col"><!-- div containing score keeping and buttons to affect appearance-->
-        <div><h4 id="scoreMessage">Score: 0</h4></div>
-        <div><button type="button" class="btn btn-light" id="easyMode"> Easy Mode </button></div>
-        <div id="easyMessage"></div>
-      </div> <!-- end of div containing score keeping-->
-      </div>
+    <div class="game text-center">
+      <h2 class=" text-center customAlert">Pick Up Jonks</h2>
+      <svg width="600" height ="600" id="svg1" viewBox="0 0 600 600" preserveAspectRatio="none" 
+      style="border:5px solid rgb(175, 63, 175); ">
+          <rect x="0" y="0" width="600" height="600" fill="skyblue" id="background" />
+          <circle cx="550" cy="40" r="30" fill="rgb(175, 63, 175)"/>
+      </svg>
     </div>
+
+    </div>
+
+      
+      
   </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 bg-dark fixed-bottom">
       <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-light px-4">&copy; 2024 Oceanna Hartog; Mohawk College</span>
+          <span class="mb-3 mb-md-0 text-light px-4">&copy; 2025 Oceanna Hartog; Mohawk College</span>
       </div>
       </footer>
 </body>

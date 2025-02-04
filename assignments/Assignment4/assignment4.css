@@ -7,24 +7,25 @@ Created on July 30th, 2024 **/
     grid-template-columns: auto;
     grid-template-areas: 
     "menu"
-    "game"
-    "score";
+    "score"
+    "game";
     row-gap: 10px; 
+    
 }
-.btn{
-    text-decoration: none;
-    color: black;
+.menu{
+    grid-area: menu;
+    padding-bottom: 5em;
 }
 
-.menu{
-    grid-area: menu; 
+.game{
+    grid-area: game;
+    padding-bottom: 4em;
 }
-.game{grid-area: game;}
     
 .score{
     grid-area: score;
+    
 }
-
 
 footer{
     text-align: center;

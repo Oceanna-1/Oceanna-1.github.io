@@ -103,66 +103,43 @@ const randomizeButton = document.getElementById("randomizebutton");
             numberOfSwaps += 3; //swapping 3 images, so add 3 to the counter
             imageCounter.innerHTML = "Total images shown: " + numberOfSwaps; // update image counter output
         }
-        randomizeButton.addEventListener("click", randomizeAll);
-        window.addEventListener("load", randomizeAll);
 
         //set values for the animation
         const imageSpinning = [{transform: "rotate(360deg)"}] // will do a 360 rotation
+        
         const spinDuration = {
             duration: 500, //500ms long
             iterations: 1, //1 spin
         }
 
-
         //function for image 1 animation, that calls the function to randomize image 1
-        function image1Spin(){
-            image1.animate(imageSpinning, spinDuration); //apply animation and duration specified previously
-            setTimeout(randomizeImage1, 490); //animation duration is 500 seconds, will allow the animation to almost fully complete then switch the image
+        function imageSpin(image){
+            image.animate(imageSpinning, spinDuration); //apply animation and duration specified previously
+            setTimeout(randomizeImage(image), 490); //animation duration is 500 seconds, will allow the animation to almost fully complete then switch the image
         }
         //function to randomize image 1
-        function randomizeImage1(){
+        function randomizeImage(image){
             let randomValue1 = Math.floor(Math.random() * 3); //create a random value for first dimension of array (which pet array)   
             let randomValue2 = Math.floor(Math.random() * 3); //create a randome value for the image to be called 
-            image1.src = petArray[randomValue1][randomValue2]; //save the image src to this
+            image.src = petArray[randomValue1][randomValue2]; //save the image src to this
             numberOfSwaps += 1; //increment number of swaps
             imageCounter.innerHTML = "Total images shown: " + numberOfSwaps; //output to screen
-            
         }
-        image1.addEventListener("click", image1Spin); //add event listener to clicking on the image
-        
 
-        //function for image 2 animation, that calls the function to randomize image 2
-        function image2Spin(){
-            image2.animate(imageSpinning, spinDuration);
-            setTimeout(randomizeImage2, 490);
-        }
-        //function to randomize image 1
-        function randomizeImage2(){
-            let randomValue1 = Math.floor(Math.random() * 3);    
-            let randomValue2 = Math.floor(Math.random() * 3);    
-            image2.src = petArray[randomValue1][randomValue2];
-            numberOfSwaps += 1;
-            imageCounter.innerHTML = "Total images shown: " + numberOfSwaps;
-        }
-        image2.addEventListener("click", image2Spin);//add event listener to clicking on the image2
+        document.addEventListener("click", (e) => {
+            if(e.target.id == "image_spot_1"){
+                imageSpin(image1);
+            }
+            else if(e.target.id == "image_spot_2"){
+                imageSpin(image2);
+                randomizeImage(image2);
+            }else if(e.target.id == "image_spot_3"){
+                imageSpin(image3);
+            }
+            });
 
-
-        //function for image 3 animation, that calls the function to randomize image 3
-        function image3Spin(){
-            image3.animate(imageSpinning, spinDuration);
-            setTimeout(randomizeImage3, 490);
-        }
-        //function to randomize image 1
-        function randomizeImage3(){
-            let randomValue1 = Math.floor(Math.random() * 3);    
-            let randomValue2 = Math.floor(Math.random() * 3);    
-            image3.src = petArray[randomValue1][randomValue2];
-            numberOfSwaps += 1;
-            imageCounter.innerHTML = "Total images shown: " + numberOfSwaps;
-        }
-        image3.addEventListener("click", image3Spin);//add event listener to clicking on the image3 that     
-        
-        
+        randomizeButton.addEventListener("click", randomizeAll);
+        window.addEventListener("load", randomizeAll);
         
         randomizeAll(); //this allows the images to randomize on load 
 
