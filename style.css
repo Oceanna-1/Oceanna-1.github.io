@@ -1,6 +1,6 @@
 body{
     background-color: rgb(255, 227, 232);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Century Gothic', 'Arial Narrow', Arial, sans-serif;
     color: rgb(41, 41, 41);
 }
 main {
@@ -8,13 +8,10 @@ main {
     padding-right: 10px;
     text-align: center;
 }
-.col {
-    padding: 5px;
 
+#ghost{
+    height: 150px;
+    width: 150px;
 }
-#col1, #col2 {
-    background-color: white;;
-}
-.pet {
-    padding: 5px;
-}
+
+
