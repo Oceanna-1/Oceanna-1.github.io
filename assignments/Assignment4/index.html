@@ -6,80 +6,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="assignment4.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="assignment4.js" defer></script>
+    <link rel="stylesheet" href = "../../style.css">
 
-
-    <title>Assignment 4</title>
+    <link rel="stylesheet" href="assignment4.css"> <!-- sets the style container specific and animation keyframes-->
+    <link rel="stylesheet" href="../../nav.css">
+    <title>Click Game</title>
 </head>
 <body>
+  <header class="text-center">
+    <h1>Pick Up Jonks</h1>
+  </header>
+  <nav>
+      <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">COMP 10259 - Client Side Summer 2024</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../index.html" >Home</a></li>
+                  <li><a class="dropdown-item" href="" >Taking User Input</a></li>
+                  <li><a class="dropdown-item" href="../Assignment3/index.html" >Time Events</a></li>
+                  <li><a class="dropdown-item" href="../Assignment4/index.html" >JS Game</a></li>
+                  <li><a class="dropdown-item" href="../../activities/worksheet24/index.html" >Click Events</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
     
+  <div class="container">
+        
+    <div class="menu">
+      <div class="col"> <!-- Start of accordion helper menu-->
+        <!-- Accordion Starts Here -->
+        <div class="accordion" id="playMenu">
 
-      <div class="container">
-        <div class="menu">
-          <header>
-            <h1>Pick Up Jonks</h1>
-        </header>
-          <div class="col"> <!-- Start of accordion helper menu-->
-            <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      How to Play!
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">
-                    <p>To begin, press the space bar on your keyboard. This will cause the ball to drop. You have until the ball reaches the top of the screen again to pick up all the jonks.</p>
-                    <p>Press the space bar to begin each new round. Left click on a jonk to make it disapear. Each round more jonks will be added. See how many rounds you can last!</p>
-                    <p>If you miss a jonk before the ball reaches the top, the game is over!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Hint!
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    <p>Too hard for you? Press the easy mode button at the bottom to increase the size of the jonks.</p>
-                    <p>Want to jazz things up? Double click the background to change the color!</p>
-                  </div>
-                </div>
+          <div class="accordion-item">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How to Play!
+            </button>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#playMenu">
+              <div class="accordion-body">
+                <p>To begin, press the space bar on your keyboard. This will cause the ball to drop. You have until the ball reaches the top of the screen again to pick up all the jonks.</p>
+                <p>Press the space bar to begin each new round. Left click on a jonk to make it disapear. Each round more jonks will be added. See how many rounds you can last!</p>
+                <p>If you miss a jonk before the ball reaches the top, the game is over!</p>
               </div>
             </div>
-          </div> 
-        </div>
+          </div>
 
-          <div class="game">
+          <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Hint!
+              </button>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#playMenu">
+              <div class="accordion-body">
+                <p>Too hard for you? Press the easy mode button at the bottom to increase the size of the jonks.<br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion Ends Here -->
+
+      </div>
+    </div>
+
+
+        <div class="game">
           <div class="col-8"> <!-- div containing SVG-->
                 <svg width="600" height ="600" id="svg1" viewBox="0 0 600 600" preserveAspectRatio="none">
                     <rect x="0" y="0" width="600" height="600" fill="skyblue" id="background"/>
                     <circle cx="550" cy="40" r="30" fill="red"/>
                 </svg>
           </div> <!-- end of div containing SVG -->
-          </div>
+        </div>
           
-          <div class="score">
+        <div class="score">
           <div class="col"><!-- div containing score keeping and buttons to affect appearance-->
             <div><h4 id="scoreMessage">Score: 0</h4></div>
             <div><button type="button" class="btn btn-light" id="easyMode"> Easy Mode </button></div>
             <div id="easyMessage"></div>
           </div> <!-- end of div containing score keeping-->
-          <footer>
-            Oceanna Hartog; 000940535; 2024
-          </footer>
           </div>
         </div>
+    <footer>
+          Oceanna Hartog; 000940535; 2024
+  </footer>
 </body>
 </html>

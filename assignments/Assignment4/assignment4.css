@@ -1,13 +1,6 @@
 /** Author: Oceanna Hartog; Student Number: 000940535
 Created on July 30th, 2024 **/
 
-header{
-    text-align: center;
-    background-color: lightblue;
-    border-bottom: 5px solid rgb(109, 176, 199);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100%; 
-}
 .container{
     display: grid;
     grid-template-rows: auto auto auto; 
@@ -17,6 +10,10 @@ header{
     "game"
     "score";
     row-gap: 10px; 
+}
+.btn{
+    text-decoration: none;
+    color: black;
 }
 
 .menu{
