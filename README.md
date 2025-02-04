@@ -4,5 +4,5 @@
 any updates to my personal projects </p>
 <p> Right now, my website is not server-based, so for the time being that will be found in other repos with the source code! </p>
 
-<p> Head to the site <a href="https://github.com/Oceanna-1](https://oceanna-1.github.io/)"> here </a></p>
+<p> Head to the site <a href="https://Oceanna-1.github.io/"> here </a></p>
 
