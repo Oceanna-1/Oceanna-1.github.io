@@ -35,7 +35,6 @@ footer{
 .jonk {
     stroke: black;
     stroke-width: 1;
-    /* fill: red; */
     animation-name: spinPosition;
     animation-duration: 1.5s;
 }

@@ -37,7 +37,7 @@ document.getElementById("g1q2_input").onchange = function group_1_choice_2() {
     let days = 0;
 
 /**
- * if tree to claculate age
+ * if tree to calculate age
  */
     if (g1q2_value >= 365.25){ /* at least 1 year? */
         years = Math.trunc(g1q2_value / 365.25); /* how many years - math.trunc will give integer value*/

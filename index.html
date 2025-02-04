@@ -22,7 +22,12 @@
                 <div class="container-fluid">
                 <div class="navbar-brand">Academic Portfolio</div>
 
-                <div class="collapse navbar-collapse" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navDrop" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+                  <div class="collapse navbar-collapse" id="navDrop">
                     <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="">HOME</a>
@@ -30,37 +35,58 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">COMP 10259 - Client Side Summer 2024</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="assignments/Assignment2/index.html" >Assignment Two</a></li>
-                                <li><a class="dropdown-item" href="assigments/Assignment3/index.html" >Assignment Three</a></li>
-                                <li><a class="dropdown-item" href="assigments/Assignment4/index.html" >Assignment Four</a></li>
-                                <li><a class="dropdown-item" href="assigments/Assignment5/index.html" >Assignment Five</a></li>
-                                <li><a class="dropdown-item" href="activities/worksheet24/index.html" >Simon Says Activity - House Lights</a></li>
+                                <li><a class="dropdown-item" href="assignments/Assignment2/index.html" >Taking User Input</a></li>
+                                <li><a class="dropdown-item" href="assignments/Assignment3/index.html" >Time Events</a></li>
+                                <li><a class="dropdown-item" href="assignments/Assignment4/index.html" >JS Game</a></li>
+                                <li><a class="dropdown-item" href="activities/worksheet24/index.html" >Click Events</a></li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
+                  </div>
                 </div>
             </nav>
+            <div class="divider">
+                <h2 class="py-auto px-3">Home</h2>
+            </div>
         </header>
 
         <main>
             <!-- Div order swaps so images are at the top past larg screen-->
             <div class="container">
-                <div class="row pt-5">
-                    <div class="col-lg-2 order-lg-1">
-                            <img src="images/junimo.gif">
-                    </div>
-                    <div class="col-lg-2 order-lg-3">
-                        <img id="ghost" src="images/ghost.gif">
+                <div class="row pt-2">
+
+                    <div class="col-lg-8 px-1 order-lg-2 mx-auto">
+                        
+                        <div class="card text-center bg-dark text-white mx-auto">
+                            <div class="card-header">
+                                <div class="row mx-auto">
+                                    <div class="col-sm-4 ">
+                                            <img class ="greetIcon" src="images/junimo.gif">
+                                    </div>
+                                    <div class="col-sm-4 mx-auto">
+                                        <h4 >Welcome!</h4>
+                                    </div>
+                                    <div class="col-sm-4 mx-auto greetIcon">
+                                        <img class ="greetIcon" src="images/ghost.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">On this site:</h5>
+                              <p class="card-text">Client Side Projects using: </p>
+                              <ul class="list-unstyled pink">
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>Bootstrap</li>
+                              </ul>
+                              <h5 class="card-title">Coming Soon: </h5>
+                              <ul class="list-unstyled pink">
+                                <li>React (remove a ton of redundancy in nav/footer)</li>
+                                <li>More projects</li>
+                              </ul>
+                            </div>
+                          </div>
                     </div>
 
-                    <div class="col-lg-8 px-5 order-lg-2">
-                        <h3>Hi there!</h3>
-                        <div class="text-start">
-                            <h4>My name is Oceanna Hartog! On this website, you will find some of my Client Side projects from Mohawk College</h4>
-                            <h5>These are a little bit old! So keep your eyes peeled for updates, and newer and better work! </h5>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -68,7 +94,7 @@
 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 bg-dark fixed-bottom">
         <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-light px-4">&copy; 2022 Company, Inc</span>
+            <span class="mb-3 mb-md-0 text-light px-4">&copy; 2024 Oceanna Hartog; Mohawk College</span>
         </div>
         </footer>
 

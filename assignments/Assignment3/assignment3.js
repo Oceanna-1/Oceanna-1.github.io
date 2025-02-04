@@ -58,7 +58,7 @@ const randomizeButton = document.getElementById("randomizebutton");
         //function is responsible for producing the output to the timer and swapping images 
         setInterval (function(){       
             let roundedTimeOnClock = Math.round(timeOnClock * 10)/10; // this will round the number coming through to 1 decimal place each iteration through the set interval
-            timerOutput.innerHTML = "Time until next swap: " + roundedTimeOnClock.toString(); //to string of the rounded version of time on clock
+            timerOutput.innerHTML = "Next Swap in: " + roundedTimeOnClock.toString(); //to string of the rounded version of time on clock
             timeOnClock -= 0.1; //counts down by 1/10th of a second
             if (timeOnClock > (timerDuration * 0.6)){ // will be a green background for anything greater than 2/3 of time remaining
                 timerOutput.style.backgroundColor = "mediumseagreen";

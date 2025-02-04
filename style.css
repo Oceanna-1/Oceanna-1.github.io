@@ -6,12 +6,59 @@ body{
 main {
     padding-left: 10px;
     padding-right: 10px;
-    text-align: center;
 }
 
-#ghost{
+.deco{
     height: 150px;
     width: 150px;
 }
+.divider {
+    height: 4rem;
+    background-color: rgba(233, 195, 230, 0.378);
+    border: solid rgb(175, 63, 175);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(175, 63, 175, .1), inset 0 .125em .5em rgba(82, 30, 82, 0.532);
+    padding-bottom: 10px;
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+  }
 
+.card{
+    font-family:'Lucida Console', 'Cascadia Code', 'Pro Font';
+}
 
+.greetIcon{
+    height: 40px;
+}
+
+.pink {
+    color: rgb(175, 63, 175);
+}
+.customAlert{
+    background-color: rgba(175, 63, 175, 0.307);
+    border-radius: 5px;
+    border: solid rgb(175, 63, 175);
+    border-width: 1.5px;
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+    padding: 10px;
+
+}
+
+.timer{
+    border: 1px solid rgba(48, 48, 48, 0.553);
+    padding: 10px;
+    box-shadow: inset -0.1em 0 .8em rgba(48, 48, 48, 0.415);
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+
+}
+
+.timebox, .rButton{
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 63, 175);
+}
+.font{
+    font-family:'Cascadia Code', 'Pro Font', 'Lucida Console';
+}
