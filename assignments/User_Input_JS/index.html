@@ -1,4 +1,5 @@
 <!-- Created by Oceanna Hartog; 000940535, on June 16th, 2024-->
+<!-- User input manipulation -->
 
   <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,8 @@
         <link rel="stylesheet" href="../../style.css">
         <link rel="stylesheet" href="../../nav.css">
     </head>
+
+    <!-- Nav Bar -->
     <body>
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
@@ -52,28 +55,36 @@
                 <h2 class="py-auto px-3">User Input - Perform Some Calculations!</h2>
             </div>
         </header>
+
+
+        <!-- Area for interaction - all input bixes within an accordion drop down-->
         <main>
+
           <div class="accordion m-3" id="accordionMenu">
+            <!-- Simple manipulation based on numbers and vowels user input -->
             <div class="accordion-item bg-dark text-white">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Calculate Days!
+                  Vowels and Factors!
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMenu">
                 <div class="accordion-body">
+                  <!-- User enters number and checks if it is within an unlisted range -->
                   <div class="function border-bottom border-white mb-2 mt-2">
                     <h5><span class = "badge bg-secondary">Range Checker!</span></h5>
                       <div class="customAlert m-1">Enter a number to see if it is in the range!</div>
                       <div class = "m-1"><p class="text-white">Input:</p><input type = "text" id="g1q1_input" size = "26"></div>
                       <div class = "m-1"><p class="text-white">Output:</p><textarea readonly id="g1q1_output" cols = "29"></textarea></div>
                   </div>
+                  <!-- Checks if user input is a vowel -->
                   <div class="function border-bottom border-white mb-2 mt-2">
                     <h5><span class = "badge bg-secondary text-light">Vowel Checker!</span></h5>
                       <div class="customAlert text-light">Enter a letter to check if it is a vowel!</div>
                     <div class = "m-1"><p class="text-white">Input:</p><input type = "text" id="g2q1_input" size = "26"></div>
                     <div class = "m-1"><p class="text-white">Output:</p><textarea readonly id="g2q1_output" cols = "29"></textarea></div>
                   </div>
+                  <!-- Returns factorial of entered number -->
                   <div class="function mt-2">
                     <h5><span class = "badge bg-secondary text-light"">Factorial Finder!</span></h5>
                       <div class="customAlert text-light">Enter a number to get its factorial!</div>
@@ -84,11 +95,11 @@
               </div>
             </div>
     
-    
+            <!-- Calculating days based on user entered number -->
             <div class="accordion-item bg-secondary">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Vowels and Factors!
+                  Calculate Days!
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMenu">
@@ -99,12 +110,11 @@
                     <div class = "m-1"><p class="text-white">Input:</p><input type = "text" id="g1q2_input" class="w-75"></div>
                     <div class = "m-1"><p class="text-white">Output:</p><textarea readonly id="g1q2_output" class="w-75"></textarea></div>
                   </div>
-                  
                 </div>
               </div>
             </div>
     
-    
+            <!-- Calculating binary equivalent of user entered number (in reverse) -->
             <div class="accordion-item ">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">

@@ -1,3 +1,6 @@
+// Author: Oceanna Hartog; Student Number: 000940535
+// Created on July 5th, 2024
+
 window.addEventListener("load", function () {
 
 const randomizeButton = document.getElementById("randomizebutton");
