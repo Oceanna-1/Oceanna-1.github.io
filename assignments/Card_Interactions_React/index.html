@@ -133,11 +133,11 @@
         let deckLength = props.deck.length;
         let source, altText;
         if(deckLength > 0){
-          source = "images/card_back.png";
+          source = "images/card_back.PNG";
           altText = "pink flower card back design";
           return(
             <div className="col-md-6 p-1" onClick ={props.playNewCard}>
-                <img className="cardDesign rounded" src="card_back.png" alt="pink flower card back design"/>
+                <img className="cardDesign rounded" src="images/card_back.PNG" alt="pink flower card back design"/>
             </div>
           );
         }else{
